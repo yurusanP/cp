@@ -21,3 +21,9 @@ for f in *.out; do
     rm -iv "$f"
   fi
 done
+
+for f in *.ans; do
+  if [ -f "$f" ]; then
+    rm -iv "$f"
+  fi
+done

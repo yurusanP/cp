@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sol="sol"
+
+if [ $# -ne 0 ]; then
+  sol=$1
+fi
+
+if g++ -fdiagnostics-color=always -g $sol.cpp -o $sol; then
+  echo "** Compile $sol success! **"
+else
+  exit 1
+fi

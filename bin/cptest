@@ -1,0 +1,29 @@
+#!/bin/sh
+
+sol="sol"
+
+if [ $# -ne 0 ]; then
+  sol=$1
+fi
+
+if ! cpbuild $@; then
+  exit 1
+fi
+
+for f in *.in; do
+  if [ ! -f "$f" ]; then
+    break
+  fi
+
+  t="${f%.in}"
+
+  echo ""
+  echo "** Testing $t... **"
+  ./$sol < "$t.in" > "$t.out"
+  if [ -f "$t.ans" ]; then
+    echo ""
+    if diff -u "$t.out" "$t.ans"; then
+      echo "** Answer $t passed! **"
+    fi
+  fi
+done

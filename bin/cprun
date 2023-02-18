@@ -1,0 +1,15 @@
+#!/bin/sh
+
+sol="sol"
+
+if [ $# -ne 0 ]; then
+  sol=$1
+fi
+
+if ! cpbuild $@; then
+  exit 1
+fi
+
+echo ""
+echo "** Running... **"
+./$sol
