@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ $# -ne 1 ]; then
+    echo "Usage: cpnew <dir-name>"
+    exit 1
+fi
+
+mkdir -p $1
+cp $CP/src/template/sanpo/contest/sol.cpp $1/sol.cpp

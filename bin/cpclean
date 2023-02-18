@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ -f sol ]; then
+  rm -iv sol
+fi
+
+for f in dust*; do
+  if [ -f "$f" ]; then
+    rm -iv "$f"
+  fi
+done
+
+for f in *.in; do
+  if [ -f "$f" ]; then
+    rm -iv "$f"
+  fi
+done
+
+for f in *.out; do
+  if [ -f "$f" ]; then
+    rm -iv "$f"
+  fi
+done
