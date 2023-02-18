@@ -1,0 +1,3 @@
+[submodule "src/template/kactl"]
+	path = src/template/kactl
+	url = https://github.com/kth-competitive-programming/kactl.git
