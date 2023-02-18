@@ -15,3 +15,7 @@ Avoid using `double` if possible. It seems that the server has a different preci
 Note that the local minimums and maximums alternates.
 
 We just consider a special case where the array contain 1 local minimum and 1 local maximum.
+
+## (c) Dora and Search
+
+Trivial.
