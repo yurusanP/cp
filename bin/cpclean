@@ -1,8 +1,13 @@
 #!/bin/sh
 
-if [ -f sol ]; then
-  rm -iv sol
-fi
+for f in sol*; do
+  if echo "$f" | grep ".cpp$" > /dev/null; then
+    continue
+  fi
+  if [ -f "$f" ]; then
+    rm -iv "$f"
+  fi
+done
 
 for f in dust*; do
   if [ -f "$f" ]; then

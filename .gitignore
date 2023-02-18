@@ -3,7 +3,9 @@
 
 ## Build
 dust*
-sol
 *.in
 *.out
 *.ans
+
+sol*
+!sol*.cpp
