@@ -9,3 +9,9 @@
 Trivial.
 
 Avoid using `double` if possible. It seems that the server has a different precision from the one on my local machine.
+
+## (b) Fedya and Array
+
+Note that the local minimums and maximums alternates.
+
+We just consider a special case where the array contain 1 local minimum and 1 local maximum.
