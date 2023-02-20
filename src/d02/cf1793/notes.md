@@ -19,3 +19,9 @@ We just consider a special case where the array contain 1 local minimum and 1 lo
 ## (c) Dora and Search
 
 Trivial.
+
+## (d) Moscow Gorillas
+
+Given that the inputs are permutations, we can build an index map.
+
+The specific situations are described in the code.

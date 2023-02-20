@@ -61,6 +61,10 @@ void solve() {
     if (ma_i < mi) {
       ans += (ll)(mi - ma_i) * (n - ma);
     }
+    // mi(i) < l <= mi(i - 1), ma(i - 1) <= r < ma(i)
+    if (mi_i < mi && ma < ma_i) {
+      ans += (ll)(mi - mi_i) * (ma_i - ma);
+    }
 
     mi = min(mi, mi_i);
     ma = max(ma, ma_i);
