@@ -18,7 +18,7 @@ Avoid using `double` if possible. It seems that the server has a different preci
 
 > Consider a circular array whose each neighbor is exactly off by 1.
 >
-> Given the sum of local min and max, give a possible shortest array.
+> Given the sum of local mins and sum of local maxes, give a possible shortest array.
 
 Note that the local minimums and maximums alternates.
 
