@@ -42,26 +42,26 @@ void solve() {
   auto [mi, ma] = mima(pix[0], qix[0]);
 
   // mex = 0
-  // r < mi0
+  // r < mi(0)
   ans += sum(1, mi + 1);
-  // mi0 < l <= r < ma0
+  // mi(0) < l <= r < ma(0)
   ans += sum(1, ma - (mi + 1) + 1);
-  // ma0 < l
+  // ma(0) < l
   ans += sum(1, n - (ma + 1) + 1);
 
   rep(i, 1, n) {
     auto [mi_i, ma_i] = mima(pix[i], qix[i]);
 
     // mex = i
-    // l <= mi(i - 1), ma(i - 1) <= r < mi(i)
+    // l <= mi(0, ..., i - 1), ma(0, ..., i - 1) <= r < mi(i)
     if (ma < mi_i) {
       ans += (ll)(mi + 1) * (mi_i - ma);
     }
-    // ma(i) < l <= mi(i - 1), ma(i - 1) <= r
+    // ma(i) < l <= mi(0, ..., i - 1), ma(0, ..., i - 1) <= r
     if (ma_i < mi) {
       ans += (ll)(mi - ma_i) * (n - ma);
     }
-    // mi(i) < l <= mi(i - 1), ma(i - 1) <= r < ma(i)
+    // mi(i) < l <= mi(0, ..., i - 1), ma(0, ..., i - 1) <= r < ma(i)
     if (mi_i < mi && ma < ma_i) {
       ans += (ll)(mi - mi_i) * (ma_i - ma);
     }
