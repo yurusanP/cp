@@ -1,7 +1,7 @@
 #ifndef SANPO_GRAPH_DIJKSTRA_H_
 #define SANPO_GRAPH_DIJKSTRA_H_
-#include "sol.h"
-#include "graph/common.h"
+#include "../sol.h"
+#include "common.h"
 
 template <typename T>
 ll dijkstra(const graph<T>& ns, int src, int dst) {

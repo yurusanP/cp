@@ -1,6 +1,6 @@
 #ifndef SANPO_GRAPH_COMMON_H_
 #define SANPO_GRAPH_COMMON_H_
-#include "sol.h"
+#include "../sol.h"
 
 template <typename T>
 struct edge {

@@ -1,6 +1,6 @@
 #ifndef SANPO_MATH_COMMON_H_
 #define SANPO_MATH_COMMON_H_
-#include "sol.h"
+#include "../sol.h"
 
 template <typename T>
 pair<T, T> qr(T a, T b) {

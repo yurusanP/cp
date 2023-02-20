@@ -1,6 +1,6 @@
 #ifndef SANPO_CONTEST_COMMON_H_
 #define SANPO_CONTEST_COMMON_H_
-#include "sol.h"
+#include "../sol.h"
 
 template <typename T>
 ostream& operator<<(ostream& os, const vector<T>& es) {
