@@ -1,8 +1,9 @@
 #!/bin/sh
 
-if [ $# -ne 1 ]; then
-    echo "Usage: cpsol <sol-name>"
-    exit 1
+sol="sol"
+
+if [ $# -ne 0 ]; then
+  sol=$1
 fi
 
-cp $CP/src/template/sanpo/contest/sol.cpp $1.cpp
+cp $CP/src/template/sanpo/sol.cpp $sol.cpp

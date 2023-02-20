@@ -1,12 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-#define rep(i, a, b) for (int i = a; i < (b); ++i)
-#define all(x) begin(x), end(x)
-#define sz(x) (int)(x).size()
-typedef long long ll;
-typedef pair<int, int> pii;
-typedef vector<int> vi;
+#include "../sol.cpp"
 
 template <typename T>
 pair<T, T> qr(T a, T b) {
@@ -15,7 +7,7 @@ pair<T, T> qr(T a, T b) {
   return {q, r};
 }
 
-// sum of [a, b)
+// sum [a, b)
 template <typename T>
 ll sum(T a, T b) {
   if (a >= b) return 0;

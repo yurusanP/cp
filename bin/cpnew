@@ -6,4 +6,5 @@ if [ $# -ne 1 ]; then
 fi
 
 mkdir -p $1
-cp $CP/src/template/sanpo/contest/sol.cpp $1/sol.cpp
+cd $1
+cpsol
