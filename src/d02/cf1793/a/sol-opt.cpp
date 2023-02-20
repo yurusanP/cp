@@ -15,7 +15,7 @@ pair<T, T> qr(T a, T b) {
   return {q, r};
 }
 
-void sol() {
+void solve() {
   ll a, b, n, m;
   cin >> a >> b >> n >> m;
   
@@ -34,6 +34,6 @@ int main() {
   int t;
   cin >> t;
   while (t--) {
-    sol();
+    solve();
   }
 }

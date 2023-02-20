@@ -22,7 +22,7 @@
       "int t;",
       "cin >> t;",
       "while (t--) {",
-      "  sol();",
+      "  solve();",
       "}"
     ]
   },
@@ -30,7 +30,7 @@
     "scope": "cpp",
     "prefix": "sol",
     "body": [
-      "void sol() {",
+      "void solve() {",
       "  ",
       "}"
     ]

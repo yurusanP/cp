@@ -8,7 +8,7 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-void sol() {
+void solve() {
   int x, y;
   cin >> x >> y;
 
@@ -29,6 +29,6 @@ int main() {
   int t;
   cin >> t;
   while (t--) {
-    sol();
+    solve();
   }
 }

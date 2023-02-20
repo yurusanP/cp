@@ -18,7 +18,7 @@ ostream& operator<<(ostream& os, const vector<T>& es) {
   return os;
 }
 
-void sol() {
+void solve() {
   int x, y;
   cin >> x >> y;
 
@@ -38,6 +38,6 @@ int main() {
   int t;
   cin >> t;
   while (t--) {
-    sol();
+    solve();
   }
 }
