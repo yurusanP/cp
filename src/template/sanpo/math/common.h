@@ -1,4 +1,6 @@
-#include "../sol.cpp"
+#ifndef SANPO_MATH_COMMON_H_
+#define SANPO_MATH_COMMON_H_
+#include "sol.h"
 
 template <typename T>
 pair<T, T> qr(T a, T b) {
@@ -19,3 +21,5 @@ template <typename T>
 pair<T, T> mima(T a, T b) {
   return {min(a, b), max(a, b)};
 }
+
+#endif

@@ -1,4 +1,6 @@
-#include "../sol.cpp"
+#ifndef SANPO_DATA_FENWICK_H_
+#define SANPO_DATA_FENWICK_H_
+#include "sol.h"
 
 template <typename T>
 struct fenwick {
@@ -23,3 +25,5 @@ struct fenwick {
     return res;
   }
 };
+
+#endif

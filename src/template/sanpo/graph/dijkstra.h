@@ -1,14 +1,7 @@
-#include "../sol.cpp"
-
-template <typename T>
-struct edge {
-  int v;
-  T w;
-  edge(int v, T w) : v(v), w(w) {}
-};
-
-template <typename T>
-using graph = vector<vector<edge<T>>>;
+#ifndef SANPO_GRAPH_DIJKSTRA_H_
+#define SANPO_GRAPH_DIJKSTRA_H_
+#include "sol.h"
+#include "graph/common.h"
 
 template <typename T>
 ll dijkstra(const graph<T>& ns, int src, int dst) {
@@ -38,3 +31,5 @@ ll dijkstra(const graph<T>& ns, int src, int dst) {
   }
   return dist[dst];
 }
+
+#endif
