@@ -4,7 +4,7 @@
 
 template <typename T>
 struct fenwick {
-  // 0 indexed
+  // 0-indexed
   vector<T> fs;
 
   fenwick(int n) : fs(n) {}

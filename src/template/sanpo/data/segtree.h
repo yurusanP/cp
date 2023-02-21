@@ -7,12 +7,14 @@ struct zkw {
   F fn;
   T unit;
   int n;
+  // [1, n) segments
+  // [n, 2n) points
   vector<T> fs;
 
   zkw(const F& fn, T unit, int n) : fn(fn), unit(unit), n(n), fs(n * 2, unit) {}
   zkw(const F& fn, T unit, vector<T>& es) : fn(fn), unit(unit), n(sz(es)), fs(n * 2, unit) {
     rep(i, 0, n) fs[i + n] = es[i];
-    rrep(i, 0, n) fs[i] = fn(fs[i * 2], fs[i * 2 + 1]);
+    rrep(i, 1, n) fs[i] = fn(fs[i * 2], fs[i * 2 + 1]);
   }
 
   void update(int ix, T x) {
