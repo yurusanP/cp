@@ -12,7 +12,15 @@ typedef vector<int> vi;
 typedef pair<ll, ll> pll;
 typedef vector<ll> vl;
 
+void solve() {}
+
 int main() {
   cin.tie(0)->sync_with_stdio(0);
   cin.exceptions(cin.failbit);
+
+  // int t;
+  // cin >> t;
+  // while (t--) {
+  //   solve();
+  // }
 }
