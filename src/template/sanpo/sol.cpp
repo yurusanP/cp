@@ -2,6 +2,8 @@
 using namespace std;
 
 #define rep(i, a, b) for (int i = a; i < (b); ++i)
+#define rrep(i, a, b) for (int i = (b) - 1; i >= (a); --i)
+#define trav(a, x) for (auto& a : x)
 #define all(x) begin(x), end(x)
 #define sz(x) (int)(x).size()
 typedef long long ll;
